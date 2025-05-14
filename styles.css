@@ -1,4 +1,4 @@
-// styles.css
+
 
 { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
 
@@ -17,7 +17,7 @@ input[type="url"], input[type="text"] { width: 100%; padding: 0.5rem; border: 1p
 
 input:focus { outline: none; border-color: #21616a; box-shadow: 0 0 0 2px rgba(33,97,106,0.2); }
 
-button { width: 100%; padding: 0.75rem; background-color: #21616a; color: #fff; border: none; border-radius: 0.25rem; font-size: 1rem; cursor: pointer; transition: background-color 0.2s ease; }
+button { padding: 0.5rem 0.75rem; background-color: #21616a; color: #fff; border: none; border-radius: 0.25rem; font-size: 0.9rem; cursor: pointer; transition: background-color 0.2s ease; }
 
 button:hover { background-color: #1b4f58; }
 
@@ -25,6 +25,10 @@ button:hover { background-color: #1b4f58; }
 
 .hidden { display: none; }
 
-#short-url { word-break: break-all; color: #2e9ca0; font-weight: bold; }
+.short-link { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-top: 0.5rem; }
 
-@media (max-width: 480px) { .container { margin: 2rem 1rem; padding: 1rem; } }
+#short-url { flex: 1; word-break: break-all; color: #2e9ca0; font-weight: bold; text-align: left; }
+
+@media (max-width: 480px) { .container { margin: 2rem 1rem; padding: 1rem; }
+
+.short-link { flex-direction: column; align-items: flex-start; } }
